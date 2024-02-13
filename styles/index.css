@@ -1,0 +1,104 @@
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --darker-cyan: hsl(179, 100%, 13%);
+    --light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    background-color: var(--light-gray);
+}
+
+h2{
+    font-family: "Big Shoulders Display";
+    color: var(--light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+p{
+    color: var(--transparent-white);
+    line-height: 150%;
+}
+
+button{
+    background-color: var(--light-gray);
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    margin-top: 20%;
+    padding: 5%;
+    width: 65%;
+    height: 12%;
+    border-radius: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10% 20%;
+}
+
+.col{
+    padding: 15%;
+}
+
+.left-container{
+    background-color: var(--orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.mid-container{
+    background-color: var(--dark-cyan);
+}
+
+.right-container{
+    background-color: var(--darker-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.orange-btn{
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}
+
+.orange-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--transparent-white);
+    color: var(--transparent-white);
+    cursor: pointer;
+}
+
+.dark-cyan-btn{
+    color: var(--dark-cyan);
+    border: 2px solid var(--dark-cyan);
+}
+
+.dark-cyan-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--transparent-white);
+    color: var(--transparent-white);
+    cursor: pointer;
+}
+
+.darker-cyan-btn{
+    color: var(--darker-cyan);
+    border: 2px solid var(--darker-cyan);
+}
+
+.darker-cyan-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--transparent-white);
+    color: var(--transparent-white);
+    cursor: pointer;
+}
+
